@@ -1,0 +1,55 @@
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "",
+    authDomain: "boymail-57450.firebaseapp.com",
+    databaseURL: "https://boymail-57450.firebaseio.com",
+    projectId: "boymail-57450",
+    storageBucket: "boymail-57450.appspot.com",
+    messagingSenderId: "255318223239"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+  //คำสั่งที่เอาไว้ PUSH
+  // firebase.database().ref('boymail-57450').push({
+  //   username: "bกฟดหฟกด",
+  //   email: "tหฟกดฟหด",
+  //   profile_picture : "e33ie"
+  // });
+  
+// รู้ว่ามี Object ทั้งหมดกี่ตัว
+//   firebase.database().ref("boymail-57450").once('value').then(function(dataSnapshot) {
+//       console.log(dataSnapshot.val());
+// 		console.log(Object.keys(dataSnapshot.val()).length);
+// })  
+
+//ดึงค่าออกมาโชว์ๆ
+// firebase.database().ref("boymail-57450").once('value').then(function(dataSnapshot) {
+//       var jj = dataSnapshot.val();
+// 	  var jjkey = Object.keys(jj);
+// 	  console.log(jj[jjkey[1]].email)
+// })  
+
+// firebase.database().ref("boymail-57450").once('value').then(function(dataSnapshot) {
+//       var jj = dataSnapshot.val();
+// 	  var jjkey = Object.keys(jj);
+//     jjkey.forEach(function(element) {
+//       console.log(jj[element].username);
+//       if(jj[element].username == "bank3"){
+//         firebase.child(element).removeValue();
+//       }
+//     });
+// 	  //console.log(jj[jjkey[1]].email)
+// })  
+
+//ลบข้อมูล
+//firebase.database().ref("boymail-57450/-Lak3nVhejS45zMA-IlP").remove();
+
+
+
+
+  
+</script>
